@@ -1,10 +1,11 @@
-# Twitter to Bluesky 自動投稿ツール
+# X(Twitter) to Bluesky 自動投稿ツール
 
-TwitterでポストしたコンテンツをBlueskyにも自動的に投稿するPythonツールです。メンションのポストとリツイートは自動的に除外されます。
+ X(Twitter)でポストしたコンテンツをBlueskyにも自動的に投稿するPythonツールです。
+メンションのポストとリツイートは自動的に除外されます。
 
 ## 機能
 
-- Twitterの特定ユーザーの新規投稿を監視
+-  X(Twitter)の特定ユーザーの新規投稿を監視
 - メンション投稿、リツイート、短いコメントの引用リツイートを自動的に除外
 - 通常の投稿をBlueskyに自動転送
 - 定期実行モードと1回だけ実行するモードをサポート
@@ -59,7 +60,7 @@ target_users:
   - username: "TwitterUsername2" # @は不要
 ```
 
-### Twitter API認証情報の取得方法
+###  X(Twitter) API認証情報の取得方法
 
 1. [Twitter Developer Portal](https://developer.twitter.com/en/portal/dashboard)にアクセスし、アカウントを作成またはログインします。
 2. プロジェクトとアプリを作成します。
@@ -100,19 +101,17 @@ python twitter_to_bluesky.py --config /path/to/custom_config.yaml
 
 ## 注意事項
 
-- このツールはTwitterとBlueskyの両方のAPIを使用するため、API利用制限に注意してください。
+- このツールは X(Twitter)とBlueskyの両方のAPIを使用するため、API利用制限に注意してください。
 - メンション投稿（@で始まるツイート）とリツイートは自動的に除外されます。
 - 短いコメントのみの引用リツイートも除外されます。
 - 最初の実行時は、各ユーザーの最新の1件のツイートのみが処理されます。
 
-## トラブルシューティング
-
 ### 認証エラー
 
-Twitter APIまたはBluesky APIの認証に失敗する場合は、以下を確認してください:
+ X(Twitter) APIまたはBluesky APIの認証に失敗する場合は、以下を確認してください:
 
 1. 設定ファイルの認証情報が正しいか
-2. Twitter APIのアクセス権限が適切に設定されているか
+2.  X(Twitter) APIのアクセス権限が適切に設定されているか
 3. Blueskyのユーザー名とパスワードが正しいか
 
 ### ツイートが取得できない
@@ -120,9 +119,6 @@ Twitter APIまたはBluesky APIの認証に失敗する場合は、以下を確�
 ツイートが取得できない場合は、以下を確認してください:
 
 1. 監視対象のユーザー名が正しいか
-2. Twitter APIの利用制限に達していないか
+2.  X(Twitter) APIの利用制限に達していないか
 3. 監視対象のユーザーのアカウントが公開されているか
 
-## ライセンス
-
-このプロジェクトはMITライセンスの下で公開されています。
