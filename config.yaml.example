@@ -1,0 +1,18 @@
+twitter:
+  api_key: "YOUR_TWITTER_API_KEY"
+  api_secret: "YOUR_TWITTER_API_SECRET"
+  access_token: "YOUR_TWITTER_ACCESS_TOKEN"
+  access_token_secret: "YOUR_TWITTER_ACCESS_TOKEN_SECRET"
+  bearer_token: "YOUR_TWITTER_BEARER_TOKEN"
+
+bluesky:
+  username: "YOUR_BLUESKY_USERNAME" # 例: user.bsky.social
+  password: "YOUR_BLUESKY_APP_PASSWORD"
+
+monitor:
+  interval_minutes: 5
+  max_tweets_per_check: 10
+
+target_users:
+  - username: "TwitterUsername1" # @は不要
+  - username: "TwitterUsername2" # @は不要
